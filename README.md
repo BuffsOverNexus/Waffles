@@ -1,7 +1,7 @@
-Pancakes
+Waffles
 ========
 
-A base Bukkit server plugin.
+The BreakfastCraft base website.
 
 Compilation
 -----------
