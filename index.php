@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<?php
- ?>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -13,6 +11,9 @@
 <body>
     <?php include 'includes/header.phtml';?>
 
+    <div class="footer">
+        <?php include 'includes/footer.phtml';?>
+    </div>
     <script src="dist/js/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
 </body>
