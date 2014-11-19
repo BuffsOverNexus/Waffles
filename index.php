@@ -11,9 +11,10 @@
 <body>
     <?php include 'includes/header.phtml';?>
 
-    <div class="footer">
+    <footer>
         <?php include 'includes/footer.phtml';?>
-    </div>
+    </footer>
+
     <script src="dist/js/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
 </body>

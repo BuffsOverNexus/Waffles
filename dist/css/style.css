@@ -2,11 +2,11 @@ body {
     background-image: url("../img/Village.png");
 }
 
-hr {
-    border-color: white;
-}
-
-.footer {
+footer {
     text-align: center;
     padding: 5%;
+}
+
+hr {
+    border-color: white;
 }
