@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 
-    <title></title>
+    <title>BreakfastCraft | Home</title>
 </head>
 <body>
-    <?php include 'includes/header.phtml';?>
+    <header>
+        <?php include 'includes/header.phtml';?>
+    </header>
 
     <footer>
         <?php include 'includes/footer.phtml';?>
