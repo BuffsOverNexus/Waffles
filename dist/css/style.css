@@ -1,5 +1,6 @@
 body {
     background-image: url("../img/Village.png");
+    padding: 5%;
 }
 
 footer {
@@ -7,6 +8,22 @@ footer {
     padding: 5%;
 }
 
+.jumbotron {
+    width: 50%;
+    margin: 0 auto;
+}
+
 hr {
     border-color: white;
+}
+
+.progress {
+    background-color: #1f79a3;
+    position: relative;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
 }
