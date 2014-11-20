@@ -54,6 +54,7 @@ $timer = Number_Format(MicroTime(true) - $timer, 4, '.', '');
         <div class="col-lg-4 col-md-offset-4">
             <div class="panel panel-default">
                 <div class="panel-body">
+                    <span class="label label-success center-block"><h5>Currently Online:</h5></span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo ($players / 60) * 100; ?>%">
                             <span><?php echo $players . "/60"; ?></span>
