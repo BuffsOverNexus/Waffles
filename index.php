@@ -28,12 +28,13 @@ if (($playersArray = $query->GetPlayers()) !== false) {
     $players = 0;
 }
 
-$timer = Number_Format(MicroTime(true) - $timer, 4, '.', '');
+//$timer = Number_Format(MicroTime(true) - $timer, 4, '.', '');
 ?>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
 
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 
@@ -48,19 +49,22 @@ $timer = Number_Format(MicroTime(true) - $timer, 4, '.', '');
         <h2 class="text-center">Welcome to BreakfastCraft</h2>
     </div>-->
 
+    <img class="center-block" src="dist/img/Logo.png">
+
     <br>
 
     <div class="row">
         <div class="col-lg-4 col-md-offset-4">
             <div class="panel panel-default">
                 <div class="panel-body">
+                    <span class="label label-default center-block"><h5>JOIN NOW: <b>Un1ted.mc-srv.com</b></h5></span>
                     <span class="label label-success center-block"><h5>Currently Online:</h5></span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo ($players / 60) * 100; ?>%">
                             <span><?php echo $players . "/60"; ?></span>
                         </div>
                     </div>
-                    <?php foreach ($playersArray as $player) : ?>
+                    <?php foreach ((array) $playersArray as $player) : ?>
                         <img src="https://minotar.net/avatar/<?php echo $player; ?>/32">
                     <?php endforeach ?>
                 </div>
