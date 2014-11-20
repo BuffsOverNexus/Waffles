@@ -59,6 +59,9 @@ $timer = Number_Format(MicroTime(true) - $timer, 4, '.', '');
                             <span><?php echo $players . "/60"; ?></span>
                         </div>
                     </div>
+                    <?php foreach ($playersArray as $player) : ?>
+                        <img src="https://minotar.net/avatar/<?php echo $player; ?>/32">
+                    <?php endforeach ?>
                 </div>
             </div>
         </div>
