@@ -11,7 +11,6 @@ $username = "bhs109-26";
 $password = "1d551c804c";
 
 $connection = mysqli_connect($host, $username, $password) or die("Unable to find database.");
-//$selectDB = @mysql_select_db($username, $connection) or die("Error: Unable to Find Database");
 
 
 // Display everything in browser, because some people can't look in logs for errors
