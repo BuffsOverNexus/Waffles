@@ -6,6 +6,13 @@ define('MQ_SERVER_ADDR', '192.99.201.217');
 define('MQ_SERVER_PORT', 25583);
 define('MQ_TIMEOUT', 1);
 // Edit this <-
+$host = "192.99.201.217";
+$username = "bhs109-26";
+$password = "1d551c804c";
+
+$connection = mysql_connect($host, $username, $password) or die("Unable to find database.");
+//$selectDB = @mysql_select_db($username, $connection) or die("Error: Unable to Find Database");
+
 
 // Display everything in browser, because some people can't look in logs for errors
 Error_Reporting(E_ALL | E_STRICT);
@@ -29,6 +36,7 @@ if (($playersArray = $query->GetPlayers()) !== false) {
     $players = 0;
 }
 
+mysql_connect()
 //$timer = Number_Format(MicroTime(true) - $timer, 4, '.', '');
 ?>
 <html>
