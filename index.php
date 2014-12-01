@@ -6,9 +6,9 @@ define('MQ_SERVER_ADDR', '192.99.201.217');
 define('MQ_SERVER_PORT', 25583);
 define('MQ_TIMEOUT', 1);
 // Edit this <-
-$host = "192.99.201.217";
-$username = "bhs109-26";
-$password = "1d551c804c";
+$host = "127.0.0.1";
+$username = "bukkit";
+$password = "ufWjP7SPLU7DwQj3";
 
 $connection = mysqli_connect($host, $username, $password) or die("Unable to find database.");
 //$selectDB = @mysql_select_db($username, $connection) or die("Error: Unable to Find Database");
