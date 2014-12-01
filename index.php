@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <?php
 // Edit this ->
-define('MQ_SERVER_ADDR', '192.99.201.217');
-define('MQ_SERVER_PORT', 25583);
+define('MQ_SERVER_ADDR', '198.100.146.49');
+define('MQ_SERVER_PORT', 25565);
 define('MQ_TIMEOUT', 1);
 // Edit this <-
 $host = "127.0.0.1";
@@ -42,7 +42,7 @@ if (($playersArray = $query->GetPlayers()) !== false) {
 <head lang="en">
     <meta charset="UTF-8">
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="dist/img/Logo.png">
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 
@@ -65,16 +65,17 @@ if (($playersArray = $query->GetPlayers()) !== false) {
         <div class="col-lg-4 col-md-offset-4">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <span class="label label-default center-block"><h5>JOIN NOW: <b>Un1ted.mc-srv.com</b></h5></span>
+                    <span class="label label-default center-block"><h5>JOIN NOW: <b><?php echo MQ_SERVER_ADDR ?></b></h5></span>
                     <span class="label label-success center-block"><h5>Currently Online:</h5></span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo ($players / 60) * 100; ?>%">
                             <span><?php echo $players . "/60"; ?></span>
                         </div>
                     </div>
-                    <?php foreach ((array) $playersArray as $player) : ?>
+                    <?php if ($players > 0) :
+                    foreach ((array) $playersArray as $player): ?>
                         <img src="https://minotar.net/avatar/<?php echo $player; ?>/32">
-                    <?php endforeach ?>
+                    <?php endforeach; endif; ?>
                 </div>
             </div>
         </div>
