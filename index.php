@@ -36,7 +36,6 @@ if (($playersArray = $query->GetPlayers()) !== false) {
     $players = 0;
 }
 
-mysqli_connect();
 //$timer = Number_Format(MicroTime(true) - $timer, 4, '.', '');
 ?>
 <html>
