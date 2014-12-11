@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+
+?>
 <!DOCTYPE html>
 <?php
 $ip = "breakfastcraft.rocks";
@@ -43,7 +48,17 @@ if ($server->connect()) {
 <img class="center-block" src="dist/img/Logo.png">
 
 <br>
-
+<div class="row">
+    <div class="col-md-4">
+    TEST
+    </div>
+    <div class="col-md-4">
+    Test
+    </div>
+    <div class="col-md-4">
+    Test
+    </div>
+</div>
 <div class="row">
     <div class="col-lg-4 col-md-offset-4">
         <div class="panel panel-default">
