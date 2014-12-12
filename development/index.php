@@ -41,9 +41,10 @@ $connection = mysqli_connect($host, $username, $password) or die("Unable to find
                 An Introduction
             </div>
             <div class="panel-body text-justify">
-                Welcome to BreakfastCraft!
+                <b>Welcome!</b>
                 <br />
-
+                We, the founders of BreakfastCraft, came together with a single goal: Provide a great overall server for Minecraft players to enjoy. In order to provide a great server, we will need to focus on
+                community involvement, patching/updates, and fair in-game play.
             </div>
             <div class="panel-footer text-right">
                 Posted by [Founder] Un1ted4rmy on <code>@Date</code>
@@ -71,18 +72,20 @@ $connection = mysqli_connect($host, $username, $password) or die("Unable to find
                 <div class="panel-heading">
                     <h3 class="panel-title">Login or Register</h3>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body" style="padding: 10px 25px 10px 25px;">
                     <form role="form" class="form-horizontal" method="post">
-                        <div class="form-group text-center ">
+                        <div class="form-group text-center">
                             <input type="password" name="website_username" class="form-control" id="website_password" placeholder="Username">
                             <input type="password" name="website_password" class="form-control" id="website_password" placeholder="Password">
                         </div>
                     </form>
+                    <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
                 </div>
             </div>
         </p>
     </div>
 </div>
+
 <div class="row">
 
 </div>
