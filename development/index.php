@@ -79,7 +79,12 @@ $connection = mysqli_connect($host, $username, $password) or die("Unable to find
                             <input type="password" name="website_password" class="form-control" id="website_password" placeholder="Password">
                         </div>
                     </form>
-                    <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
+                    <div class="text-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success center-block">Login</button>
+                            <button type="button" class="btn btn-danger">Register</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </p>
