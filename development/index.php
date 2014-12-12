@@ -80,10 +80,8 @@ $connection = mysqli_connect($host, $username, $password) or die("Unable to find
                         </div>
                     </form>
                     <div class="text-center">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-success center-block">Login</button>
-                            <button type="button" class="btn btn-danger">Register</button>
-                        </div>
+                        <button type="button" class="btn btn-success">Login</button>
+                        <button type="button" class="btn btn-primary" style="margin-left: 10px;">Register</button>
                     </div>
                 </div>
             </div>
