@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Ryan
- * Date: 12/11/2014
- * Time: 7:19 PM
+ * Date: 12/20/2014
+ * Time: 7:01 PM
  */
 ?>
 <!DOCTYPE html>
@@ -27,8 +27,9 @@ $connection = mysqli_connect($host, $username, $password) or die("Unable to find
 </head>
 <body>
 <header>
-    <?php include '../header.phtml'; ?>
+    <?php include '../includes/header.phtml'; ?>
 </header>
+
 <div class="row">
 
     <div class="col-xs-6 col-md-6 col-md-offset-3">
@@ -37,7 +38,7 @@ $connection = mysqli_connect($host, $username, $password) or die("Unable to find
             <!-- Post by <Player> -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                Website Registration
+                Website Registration - Confirmation
             </div>
             <div class="panel-body text-justify">
                 <p>Welcome, <code>@Username</code>!</p>
@@ -58,6 +59,14 @@ $connection = mysqli_connect($host, $username, $password) or die("Unable to find
     </div>
 
 </div>
+
+</p>
+</div>
+<div class="col-xs-6 col-md-3 ">
+
+</div>
+</div>
+
 <footer>
     <?php include '../includes/footer.phtml'; ?>
 </footer>

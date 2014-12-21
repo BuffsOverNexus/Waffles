@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Ryan
- * Date: 12/11/2014
- * Time: 7:19 PM
+ * Date: 12/20/2014
+ * Time: 7:26 PM
  */
 ?>
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ $connection = mysqli_connect($host, $username, $password) or die("Unable to find
 </head>
 <body>
 <header>
-    <?php include '../header.phtml'; ?>
+    <?php include '../includes/header.phtml'; ?>
 </header>
 <div class="row">
 
@@ -37,17 +37,18 @@ $connection = mysqli_connect($host, $username, $password) or die("Unable to find
             <!-- Post by <Player> -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                Website Registration
+                Website Registration - Part 2
             </div>
             <div class="panel-body text-justify">
-                <p>Welcome, <code>@Username</code>!</p>
+                <p>Verification Code</p>
                 <p>
-                    Before you may continue, please ensure you have completed the following tasks:
-                <ul>
-                    <li>Successfully joined our Minecraft server with your Minecraft account.</li>
-                    <li>Verify a pending registration is under the account you plan to register.</li>
-                    <li>Ensure the account you are registering under is YOUR account.</li>
-                </ul>
+                    As part of our registration process, the code below will need to be entered <b>by joining our server</b> and typing in:
+
+                    <p>
+                        <kbd>/verify <code>code</code></kbd>
+                    </p>
+                </p>
+
         </p>
 
         <p class="text-center">
